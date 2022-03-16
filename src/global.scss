@@ -1,3 +1,11 @@
 $mainBgColor: white;
 $mainColor: #15023a;
 $introImgBgColor: crimson;
+
+$width: 800px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
